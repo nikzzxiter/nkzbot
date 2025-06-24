@@ -10257,7 +10257,7 @@ async def obfuscate_js(update: Update, context: ContextTypes.DEFAULT_TYPE):
         obf_file_path = os.path.join(os.getcwd(), obf_file_name)
         
         result = subprocess.run([
-            'javascript-obfuscator', file_path,
+            'npx', 'javascript-obfuscator', file_path,
             '--output', obf_file_path,
             '--compact', 'true',
             '--control-flow-flattening', 'true',
@@ -13937,4 +13937,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

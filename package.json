@@ -1,0 +1,8 @@
+{
+  "name": "nkzbot",
+  "version": "1.0.0",
+  "dependencies": {
+    "javascript-obfuscator": "^4.0.0"
+  }
+}
+
