@@ -1,0 +1,11 @@
+python-telegram-bot==20.3
+pycryptodome
+psutil
+requests
+pytz
+qrcode
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+PyGithub
+
