@@ -12309,7 +12309,7 @@ Total open ports: {len(open_ports)}
 Risk Assessment: {risk_assessment}
 
 ## Open Ports Details
-{chr(10).join([f"Port {port}/tcp - {service}{f' - {detail["banner"]}' if detail['banner'] else ''}" for port, service in open_ports for detail in port_details if detail['port'] == port]) if open_ports else "No open ports detected"}
+{chr(10).join([f"Port {port}/tcp - {service}" + (f" - {detail['banner']}" if detail['banner'] else "") for port, service in open_ports for detail in port_details if detail['port'] == port]) if open_ports else "No open ports detected"}
 
 ## Closed/Filtered Ports
 {chr(10).join([f"Port {port}/tcp - {service}" for port, service in closed_ports[:10]]) if closed_ports else "N/A"}
