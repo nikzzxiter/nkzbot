@@ -1,1 +1,1 @@
-worker: python3 toolsv2.py
+worker: python toolsv2.py
